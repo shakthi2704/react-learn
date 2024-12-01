@@ -32,11 +32,11 @@ const UseEffectHook = () => {
         .json()
         .then((data) => {
           setData(data.slice(0, 10))
-          console.log(data)
+          // console.log(data)
           setLoading(false)
         })
         .catch((error) => {
-          console.log(error)
+          // console.log(error)
           setLoading(false)
         })
     )
