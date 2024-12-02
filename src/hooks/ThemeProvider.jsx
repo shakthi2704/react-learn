@@ -1,14 +1,10 @@
-// src/ThemeProvider.jsx
 import React, { createContext, useState } from "react"
 
-// Create ThemeContext
 const ThemeContext = createContext()
 
-// ThemeProvider Component
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light")
 
-  // Toggle Theme
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"))
   }
@@ -20,5 +16,4 @@ const ThemeProvider = ({ children }) => {
   )
 }
 
-// Export Context and Provider
 export { ThemeContext, ThemeProvider }
