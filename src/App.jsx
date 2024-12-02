@@ -1,5 +1,10 @@
 import React, { useContext } from "react"
-import { UseEffectHook, UseStateHook, UseMemoHook } from "./hooks"
+import {
+  UseEffectHook,
+  UseStateHook,
+  UseMemoHook,
+  UseReducerHook,
+} from "./hooks"
 import { ThemeContext } from "./hooks/ThemeProvider"
 
 const App = () => {
@@ -32,6 +37,11 @@ const App = () => {
       <div className="w-full p-4 m-2 border-2">
         <div>
           <UseMemoHook />
+        </div>
+      </div>
+      <div className="w-full p-4 m-2 border-2">
+        <div>
+          <UseReducerHook />
         </div>
       </div>
     </div>
