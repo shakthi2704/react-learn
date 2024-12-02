@@ -4,6 +4,8 @@ import {
   UseStateHook,
   UseMemoHook,
   UseReducerHook,
+  Counter,
+  UserName,
 } from "./hooks"
 import { ThemeContext } from "./hooks/ThemeProvider"
 
@@ -42,6 +44,16 @@ const App = () => {
       <div className="w-full p-4 m-2 border-2">
         <div>
           <UseReducerHook />
+        </div>
+      </div>
+      <div className="w-full p-4 m-2 border-2">
+        <div>
+          <Counter />
+        </div>
+      </div>
+      <div className="w-full p-4 m-2 border-2">
+        <div>
+          <UserName />
         </div>
       </div>
     </div>
